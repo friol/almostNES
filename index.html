@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AlmostNES v0.45a</title>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--<script src="js/dropzone.js"></script>-->
+    <script src="js/utils.js"></script>
+    <script src="js/nesapu.js"></script>
+    <script src="js/nesmmu.js"></script>
+    <script src="js/nesppu.js"></script>
+    <script src="js/cpu6502.js"></script>
+    <script src="js/romLoader.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+
+AlmostNES v0.45a - release version - <span id="fpsSpan">-</span><br/>
+
+<canvas id="mainCanvass" width="900" height="600" style="float:left"></canvas>
+<!--<canvas id="mainCanvass" width="256" height="240" style="float:left"></canvas>-->
+
+<br/>
+<textarea id="nestestLog" name="nestestLog" cols="120" rows="5" style="display:none;"></textarea>
+
+<br/>
+<span style="float:left;clear:both;">Load you .nes rom from here.</span>
+<input type="file" id="input" onchange="handleFileUpload(this.files)" style="float:left;clear:both;">
+<span style="float:left;clear:both;">Press "f" to start rom execution. Arrows to move, and "o" and "p" as "a" and "b". "k" is start</span>
+
+</body>
+</html>
